@@ -18,7 +18,17 @@ Clone the repository to your local machine. Navigate into the root directory and
 
 ## Usage
 
-Change directory into the develop folder and run node index. Provide project information as requested. Afterwards, a professional readme will be generated for you. The file will be named generated-readme.md and can be found in the develop folder. Rename it as you wish and use it for your own project.
+While in your bash terminal, change directory into the develop folder and run node index. Provide project information as requested. Afterwards, a professional readme will be generated for you. The file will be named generated-readme.md and can be found in the develop folder. Rename it as you wish and use it for your own project.
+
+Refer to the screenshots and video below:
+
+![Screenshot](https://i.imgur.com/9Fb30Kn.jpg)
+
+![Screenshot](https://i.imgur.com/5typw5c.jpg)
+
+![Screenshot](https://i.imgur.com/8gYDYXo.jpg)
+
+### [Video](https://drive.google.com/file/d/1tZbfiIwy-P761MRJoUp5nNZiPEI4S7Uh/view)
 
 ## License
 
