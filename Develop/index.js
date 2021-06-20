@@ -90,7 +90,7 @@ const promptUser = projectData => {
             type: 'list',
             name: 'license',
             message: 'Choose a license.',
-            choices: ['Apache License 2.0', 'BSD 3-Clause "New" or "Revised" license', 'BSD 2-Clause "Simplified" or "FreeBSD" license', 'GNU General Public License (GPL)', 'GNU General Public License (GPL)', 'MIT license', 'Mozilla Public License 2.0', 'Common Development and Distribution License', 'Eclipse Public License version 2.0'],
+            choices: ['Apache License 2.0', 'BSD 3-Clause "New" or "Revised" license', 'BSD 2-Clause "Simplified" or "FreeBSD" license', 'GNU General Public License (GPL)', 'MIT license', 'Mozilla Public License 2.0', 'Eclipse Public License version 1.0'],
             validate: licenseInput => {
                 if (licenseInput) {
                     return true;
