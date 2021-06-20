@@ -34,8 +34,8 @@ module.exports = readmeData => {
     // add user-provided data and badge to template
 
     return `
-# ${readmeData[0].title}
 ${readmeData[1]}
+# ${readmeData[0].title}
 
 ## Description 
 
@@ -72,11 +72,11 @@ ${readmeData[0].test}
 
 ## Questions
 
-### What is your github username?
+### - What is your github username?
 
 You can find me on github at [${readmeData[0].username}] (https://github.com/${readmeData[0].username})
 
-### How can I reach out?
+### - How can I reach out?
 
 Contact me at <${readmeData[0].email}>
 `;
