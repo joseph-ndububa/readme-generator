@@ -33,6 +33,22 @@ const promptUser = () => {
             type: 'input',
             name: 'test',
             message: 'How can users test your application?',
+        },
+        {
+            type: 'list',
+            name: 'license',
+            message: 'Choose a license.',
+            choices: ['Apache License 2.0', 'BSD 3-Clause "New" or "Revised" license', 'BSD 2-Clause "Simplified" or "FreeBSD" license', 'GNU General Public License (GPL)', 'GNU General Public License (GPL)', 'MIT license', 'Mozilla Public License 2.0', 'Common Development and Distribution License', 'Eclipse Public License version 2.0']
+        },
+        {
+            type: 'input',
+            name: 'username',
+            message: 'What is your github username?',
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'What is your email address?',
         }
     ])
 }
