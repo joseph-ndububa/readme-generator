@@ -1,8 +1,11 @@
-// TODO: Include packages needed for this application
+// import dependencies
+
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generatePage = require('./utils/readme-template.js');
-// TODO: Create an array of questions for user input
+
+//prompt user for project info
+
 const promptUser = projectData => {
 
     let projectInfo = [];
@@ -127,24 +130,19 @@ const promptUser = projectData => {
             }
         }
     ])
+        // push user responses into projectInfo array
         .then(info => {
             projectInfo.push(info);
             return projectInfo;
         })
 }
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
-
-// TODO: Create a function to initialize app
-function init() { }
-
-// Function call to initialize app
-init();
 
 promptUser()
     .then(projectInfo => {
+        // generate markdown using template and user input
         const readmeData = generatePage(projectInfo);
+        //write markdown to generated-readme.md
         fs.writeFile('./generated-readme.md', readmeData, err => {
             if (err) throw new Error(err);
         })

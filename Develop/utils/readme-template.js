@@ -1,5 +1,7 @@
 module.exports = readmeData => {
 
+    // select badge based on chosen license
+
     if (readmeData[0].license == "Apache License 2.0") {
         let badge = `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
         readmeData.push(badge);
@@ -28,6 +30,8 @@ module.exports = readmeData => {
         let badge = `[![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0)`;
         readmeData.push(badge);
     }
+
+    // add user-provided data and badge to template
 
     return `
 # ${readmeData[0].title}
