@@ -121,10 +121,14 @@ const promptUser = projectData => {
             name: 'email',
             message: 'What is your email address?',
             validate: emailInput => {
-                if (emailInput) {
+                // RegEx source is Tyler McGinnis: https://ui.dev/validate-email-address-javascript/
+                function emailValidationCheck(address) {
+                    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(address);
+                }
+                if (emailInput && emailValidationCheck(emailInput)) {
                     return true;
                 } else {
-                    console.log('Please enter your email address!');
+                    console.log('Please enter a valid email address!');
                     return false;
                 }
             }
